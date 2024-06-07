@@ -1,5 +1,8 @@
 Shaun's Spotify Recommender System
+
 Project Overview
+
+
 Welcome to my Spotify Recommender System! This project represents a blend of my love for music and my passion for data analysis. Growing up in a household where music was the heartbeat of our daily lives, I’ve always been curious about exploring new tracks and artists. This project aims to answer a simple yet intriguing question: "Who and what does Shaun listen to the most on Spotify?"
 
 Table of Contents
