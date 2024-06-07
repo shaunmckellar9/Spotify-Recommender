@@ -14,6 +14,7 @@ Playlist Creation
 Future Work
 Usage Instructions
 Contact
+
 Introduction
 This project leverages the Spotify API to fetch my liked songs, analyze them, and provide personalized recommendations. It showcases my ability to connect to APIs, clean and analyze data, and visualize insights.
 
@@ -22,6 +23,7 @@ Understand my musical preferences: Identify the genres, artists, and characteris
 Build a recommendation system: Suggest new tracks based on my listening history.
 Analyze audio features: Gain insights into the audio properties that appeal to me the most.
 Create a dynamic playlist: Automatically update my recommendations with a weekly cron job.
+
 Data Collection
 Spotify API
 Using the Spotify API, I extracted data for over 3,700 liked songs, including:
@@ -32,6 +34,7 @@ Albums
 Popularity scores
 Audio features (e.g., danceability, energy, tempo, etc.)
 python
+
 Copy code
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
@@ -52,13 +55,16 @@ liked_songs = results['items']
 while results['next']:
     results = sp.next(results)
     liked_songs.extend(results['items'])
+
 Data Analysis
 Genre and Feature Analysis
 Analyzed the genres and audio features to understand my music preferences. Key insights include:
 
 Dominant genres: Hip hop and rap were the most prevalent.
+
 Audio characteristics: Tracks with high danceability and energy were preferred, indicating a penchant for lively and engaging music.
-python
+
+Python
 Copy code
 # Extract relevant features and metadata
 song_data = []
